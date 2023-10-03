@@ -1,0 +1,93 @@
+:root {
+    --background: rgba(27,36,74,1) ;
+    --primary: rgba(154,171,216,1);
+    --heading: rgba(238,238,238,1);
+    --text: rgba(249,79,109,1);
+    --scoreboard: rgba(8,0,1,1) ;
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.home, .guest{
+    width: 30vh;
+    height: 35vh;
+    font-size: 1.5rem;
+    color: var(--heading);
+    padding: 0.5em;
+    margin: 0;
+}
+
+h3{
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--scoreboard);
+    display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+    width: 15vh;
+    font-size: 3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+.buttons{
+    display: inline-block;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5em;
+
+}
+
+.plus1, .plus2, .plus3, .reset{
+    cursor: pointer;
+    color: var(--primary);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        display: flex;
+        gap: 15vh;
+
+    }
+
+    .plus1, .plus2, .plus3, .reset{
+        width: 10vh;
+        cursor: pointer;
+        color: var(--primary);
+        background-color: transparent;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        display: flex-box;
+        flex-wrap: wrap;
+
+
+    }
+
+}
